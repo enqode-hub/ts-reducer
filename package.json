@@ -1,0 +1,23 @@
+{
+  "name": "@enqode/ts-reducer",
+  "version": "1.0.0",
+  "description": "Typesafe reducers and action dispatching for redux",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "test": "jest"
+  },
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "author": "Ricard Derheim <r@enqode.de>",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.12",
+    "@types/node": "^11.13.8",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  }
+}
