@@ -1,6 +1,6 @@
 {
   "name": "@enqode/ts-reducer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Typesafe reducers and action dispatching for redux",
   "author": "Ricard Derheim <r@enqode.de>",
   "license": "MIT",
