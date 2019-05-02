@@ -1,7 +1,7 @@
 # Usage
 
 ````typescript
-import { createStore, AnyAction } from 'redux'
+import { createStore, AnyAction, Dispatch } from 'redux'
 import { create } from './../src/index'
 
 /**
@@ -31,7 +31,7 @@ type SendMessage = {
   message: string
 }
 
-const changeUsername = create<ChatState, SendMessage>('SEND_MESSAGE', (state, message) => {
+const sendMessage = create<ChatState, SendMessage>('SEND_MESSAGE', (state, message) => {
   return{
     ...state,
     messages:[
@@ -47,7 +47,7 @@ const changeUsername = create<ChatState, SendMessage>('SEND_MESSAGE', (state, me
  */
 
 const reducersMap = {
-  [changeUsername.type]: changeUsername.reducer
+  [sendMessage.type]: sendMessage.reducer
 }
 
 const rootReducer = (state: ChatState = initialState, action: AnyAction) => {
@@ -58,4 +58,23 @@ const rootReducer = (state: ChatState = initialState, action: AnyAction) => {
 }
 
 const store = createStore(rootReducer)
+
+
+/**
+ * How to dispatch actions
+ */
+
+// using store.dispatch directly
+sendMessage.createDispatch(store.dispatch)({
+  username: 'enqode',
+  message: 'Hey there!',
+})
+
+// using react-redux's connect function
+const mapDispatchToProps = (dispatch: Dispatch) => ({
+  sendMessage: (message: string) => sendMessage.createDispatch(dispatch)({
+    username: 'enqode',
+    message
+  })
+})
 ````
