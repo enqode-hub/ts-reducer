@@ -1,6 +1,6 @@
 {
   "name": "@enqode/ts-reducer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typesafe reducers and action dispatching for redux",
   "author": "Ricard Derheim <r@enqode.de>",
   "license": "MIT",
@@ -12,7 +12,6 @@
     "url": "https://github.com/enqode-hub/ts-reducer/issues"
   },
   "homepage": "https://github.com/enqode-hub/ts-reducer#readme",
-
   "scripts": {
     "publish": "npm run test && npm run build && npm publish --access public",
     "build": "tsc --build tsconfig.json",
