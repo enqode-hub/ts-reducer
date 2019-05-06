@@ -23,7 +23,6 @@ test('test create() function', () => {
 
   // test .createDispatch()
   const reduxDispatchMock = jest.fn((action) => {
-    console.log(action)
     expect(action).toEqual({
       type: 'ADD_MESSAGE',
       payload:{
