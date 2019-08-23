@@ -5,12 +5,9 @@
     "declaration": true,
     "outDir": "./dist",
     "strict": true,
-    "esModuleInterop": true
-  },
-  "include": [
-    "./src/index.ts"
-  ],
-  "exclude": [
-    "./node_modules"
-  ]
+    "esModuleInterop": true,
+    "types":[
+      "jest"
+    ]
+  }
 }
