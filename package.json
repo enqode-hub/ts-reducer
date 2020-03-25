@@ -23,13 +23,13 @@
     "example": "examples"
   },
   "dependencies": {
-    "redux": "^4.0.4"
+    "redux": "^4.0.5"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.18",
-    "@types/node": "^11.13.19",
-    "jest": "^24.9",
-    "ts-jest": "^24.0",
-    "typescript": "^3.5"
+    "@types/jest": "^24.9.1",
+    "@types/node": "^11.15.7",
+    "jest": "^25.1.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.8.3"
   }
 }
